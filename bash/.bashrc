@@ -13,7 +13,7 @@ HISTCONTROL=ignoreboth
 # append to the history file, dont overwrite it
 shopt -s histappend
 
-eval $(dircolors -b ~/.dir_colors)
+#eval $(dircolors -b ~/.dir_colors)
 
 #base16 shell
 #BASE16_SHELL= "$HOME/.config/base16-shell/base16-default.dark.sh"
@@ -29,5 +29,4 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias bc='bc -l'
 alias startx='startx &> ~/.xlog'
-alias fixwifi='sudo systemctl restart netctl-auto@wlp3s0.service'
 alias killchrome='sudo kill -9 `pgrep chrome`'
