@@ -1,21 +1,21 @@
 !URXVT Stuff
 !---------------------------------------------------------------------
 ! Set Font and Scrolling
-URxvt.font: xft:Inconsolata:size=10:antialias=true
-URxvt.boldfont: xft:Inconsolata:bold:size=10:antialias=true
-URxvt*scrollstyle: rxvt
-URxvt*scrollBar: false 
-URxvt*letterSpace: -1
+!URxvt.font: xft:Inconsolata:size=10:antialias=true
+!URxvt.boldfont: xft:Inconsolata:bold:size=10:antialias=true
+!URxvt*scrollstyle: rxvt
+!URxvt*scrollBar: false 
+!URxvt*letterSpace: -1
 !Urxvt*depth: 32
-URxvt*borderless: 1
-Urxvt*termName: rxvt-unicode
+!URxvt*borderless: 1
+!Urxvt*termName: rxvt-unicode
 
-URxvt*underlineColor:  yellow
+!URxvt*underlineColor:  yellow
 
 ! Colored Man Pages
-URxvt.colorIT: #87af5f
-URxvt.colorBD: #d7d7d7
-URxvt.colorUL: #87afd7
+!URxvt.colorIT: #87af5f
+!URxvt.colorBD: #d7d7d7
+!URxvt.colorUL: #87afd7
 
 !TomorrowNight
 #define t_background        #1d1f21
