@@ -4,7 +4,9 @@ syntax enable
 
 set background=dark
 "let base16colorspace=256 " Access colors present in 256 colorspace
-colorscheme Tomorrow-Night
+
+colorscheme base16-default-dark
+"let g:base16_shell_path=base16-builder/output/shell/
 
 set tabstop=4
 set shiftwidth=4

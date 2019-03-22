@@ -2,6 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+export EDITOR="vim"
+export TERMINAL="urxvt"
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -43,7 +46,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -51,7 +54,7 @@ if [ -n "$force_color_prompt" ]; then
 	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
 	# a case would tend to support setf rather than setaf.)
 	color_prompt=yes
-    else
+   else
 	color_prompt=
     fi
 fi
@@ -115,8 +118,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-if [ $TILIX_ID ] || [ $VTE_VERSION ] ; then source /etc/profile.d/vte.sh; fi # Ubuntu Budgie END
-
 
 #prompt
 [[ "$PS1" ]] && echo -e "\e[1;36m$(/usr/games/fortune)\e[0m"
