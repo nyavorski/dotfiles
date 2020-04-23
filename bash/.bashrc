@@ -119,6 +119,12 @@ export DOTNET_CLI_TELEMETRY_OPTOUT='true'
 #export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"
 #export _JAVA_AWT_WM_NONREPARENTING=1
 
+#source nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+#nvm bash completion
+[[ -r $NVM_DIR/bash_completion ]] && \. $NVM_DIR/bash_completion
 
 ###-begin-npm-completion-###
 #
